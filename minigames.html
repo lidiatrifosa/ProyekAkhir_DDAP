@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ruang Lega - Tempat Nyaman untuk Kesehatan Mental</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav
+      class="navbar navbar-expand-md navbar-light bg-white shadow-sm sticky-top"
+    >
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="#home">
+          <i class="fas fa-cloud pastelpink-text me-2"></i>
+          <span class="fw-bold">
+            <span class="pastelpink-text">Ruang</span>
+            <span class="pastelblue-text"> Lega</span>
+          </span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="minigames.html">Mini Games</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="film&musik.html">Film & Musik</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="diskusi.html">Diskusi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="journaling.html">Journaling</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contactus">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Mini Games Section -->
+    <section class="py-5 pastelpink-100">
+      <div class="container">
+        <h2 class="h2 fw-bold text-center pastelpink-text mb-5">
+          Mini Games Relaksasi
+        </h2>
+        <div class="row g-4">
+          <!-- Game 1 - Breathing Exercise -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card pastelblue-100 shadow h-100 text-center">
+              <div class="card-body">
+                <div
+                  class="breathing-circle mx-auto mb-3 pastelpink-400 rounded-circle d-flex align-items-center justify-content-center"
+                  style="width: 8rem; height: 8rem"
+                >
+                  <span class="text-white fw-bold fs-5">Tarik & Hembus</span>
+                </div>
+                <h3 class="h5 fw-semibold mb-2">Latihan Pernapasan</h3>
+                <p class="text-muted">
+                  Latihan sederhana untuk menenangkan pikiran dan mengurangi
+                  kecemasan.
+                </p>
+                <a href="#" class="btn pastelpink-500 text-white w-100 mt-3"
+                  >Mulai Latihan</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Game 2 - Coloring Book -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card pastelpink-100 shadow h-100 text-center">
+              <div class="card-body">
+                <div
+                  class="mx-auto mb-3 pastelpink-200 rounded-3 d-flex align-items-center justify-content-center"
+                  style="width: 8rem; height: 8rem"
+                >
+                  <i class="fas fa-palette fa-3x pastelpink-text"></i>
+                </div>
+                <h3 class="h5 fw-semibold mb-2">Buku Mewarnai Digital</h3>
+                <p class="text-muted">
+                  Ekspresikan kreativitas Anda dengan mewarnai gambar yang
+                  menenangkan.
+                </p>
+                <a href="#" class="btn pastelpink-500 text-white w-100 mt-3"
+                  >Mulai Mewarnai</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Game 3 - Puzzle -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card pastelblue-100 shadow h-100 text-center">
+              <div class="card-body">
+                <div
+                  class="mx-auto mb-3 pastelpink-200 rounded-3 d-flex align-items-center justify-content-center"
+                  style="width: 8rem; height: 8rem"
+                >
+                  <i class="fas fa-puzzle-piece fa-3x pastelpink-text"></i>
+                </div>
+                <h3 class="h5 fw-semibold mb-2">Puzzle Santai</h3>
+                <p class="text-muted">
+                  Asah pikiran dengan puzzle sederhana yang dirancang untuk
+                  relaksasi.
+                </p>
+                <a href="#" class="btn pastelpink-500 text-white w-100 mt-3"
+                  >Mainkan Puzzle</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="py-4 bg-white border-top mt-5">
+      <div class="container text-center">
+        <span class="text-muted"
+          >&copy; 2025 Ruang Lega. All rights reserved.</span
+        >
+      </div>
+    </footer>
+    <script>
+      function updateActiveNav() {
+        const hash = window.location.hash || "#home";
+        const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+
+        navLinks.forEach((link) => {
+          if (link.getAttribute("href") === hash) {
+            link.classList.add("pastelpink-text", "fw-semibold");
+          } else {
+            link.classList.remove("pastelpink-text", "fw-semibold");
+          }
+        });
+      }
+
+      updateActiveNav();
+      window.addEventListener("hashchange", updateActiveNav);
+    </script>
+  </body>
+</html>
