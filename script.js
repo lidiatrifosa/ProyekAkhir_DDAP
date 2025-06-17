@@ -70,12 +70,17 @@ function renderMoods() {
 renderMoods();
 
 // Navbar active link logic
+// Fungsi updateActiveNav dipindahkan dari index.html agar bisa digunakan di semua halaman
 function updateActiveNav() {
-  const hash = window.location.hash || "#home";
+  let path = window.location.pathname.split("/").pop();
+  if (path === "" || path === undefined) path = "index.html"; // fallback ke index.html jika di root
   const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
 
   navLinks.forEach((link) => {
-    if (link.getAttribute("href") === hash) {
+    let href = link.getAttribute("href");
+    // Abaikan hash di href
+    if (href) href = href.split("#")[0];
+    if (href && path === href) {
       link.classList.add("pastelpink-text", "fw-semibold");
     } else {
       link.classList.remove("pastelpink-text", "fw-semibold");
@@ -83,5 +88,6 @@ function updateActiveNav() {
   });
 }
 
-updateActiveNav();
-window.addEventListener("hashchange", updateActiveNav);
+// Jalankan updateActiveNav setelah DOM siap
+window.addEventListener("DOMContentLoaded", updateActiveNav);
+window.addEventListener("popstate", updateActiveNav);

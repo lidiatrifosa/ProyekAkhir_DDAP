@@ -217,7 +217,7 @@
               <a class="nav-link" href="journaling.html">Journaling</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contactus">Contact Us</a>
+              <a class="nav-link" href="contactUs.html">Contact Us</a>
             </li>
           </ul>
         </div>
@@ -281,20 +281,21 @@
     </footer>
     <script>
       function updateActiveNav() {
-        const hash = window.location.hash || "#home";
+        const path = window.location.pathname.split("/").pop();
         const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
-
         navLinks.forEach((link) => {
-          if (link.getAttribute("href") === hash) {
+          const href = link.getAttribute("href");
+          if (href && path === href) {
             link.classList.add("pastelpink-text", "fw-semibold");
           } else {
             link.classList.remove("pastelpink-text", "fw-semibold");
           }
         });
       }
-
       updateActiveNav();
-      window.addEventListener("hashchange", updateActiveNav);
+      window.addEventListener("popstate", updateActiveNav);
+      window.addEventListener("DOMContentLoaded", updateActiveNav);
     </script>
+    <script src="script.js"></script>
   </body>
 </html>
