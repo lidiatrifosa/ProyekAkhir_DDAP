@@ -70,7 +70,7 @@
     <section class="py-5 bg-white">
       <div class="container">
         <h2 class="h2 fw-bold text-center pastelpink-text mb-5">
-          Film & Video Relaksasi
+          Film & Musik Relaksasi
         </h2>
         <div class="row g-4">
           <!-- Video 1 -->
@@ -78,11 +78,28 @@
             <div class="card pastelblue-100 shadow h-100">
               <div
                 class="position-relative pastelpink-300 d-flex align-items-center justify-content-center"
-                style="height: 12rem"
+                style="height: 12rem; overflow: hidden"
               >
-                <i class="fas fa-play-circle fa-3x text-white opacity-75"></i>
+                <img
+                  src="Pantai.jpg"
+                  alt="Pemandangan Pantai"
+                  style="
+                    object-fit: cover;
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    z-index: 1;
+                  "
+                />
+                <i
+                  class="fas fa-play-circle fa-3x text-white opacity-75"
+                  style="z-index: 2; position: relative"
+                ></i>
                 <div
                   class="position-absolute bottom-0 end-0 bg-dark bg-opacity-50 text-white small px-2 py-1 rounded m-2"
+                  style="z-index: 2"
                 >
                   8:32
                 </div>
@@ -103,64 +120,97 @@
               </div>
             </div>
           </div>
-          <!-- Video 2 -->
-          <div class="col-lg-4 col-md-6">
-            <div class="card pastelpink-100 shadow h-100">
-              <div
-                class="position-relative pastelpink-400 d-flex align-items-center justify-content-center"
-                style="height: 12rem"
-              >
-                <i class="fas fa-play-circle fa-3x text-white opacity-75"></i>
-                <div
-                  class="position-absolute bottom-0 end-0 bg-dark bg-opacity-50 text-white small px-2 py-1 rounded m-2"
-                >
-                  15:21
-                </div>
-              </div>
-              <div class="card-body">
-                <h3 class="h6 fw-semibold mb-2">Hutan Hujan yang Damai</h3>
-                <p class="text-muted small mb-3">
-                  Suara hujan dan alam yang menenangkan pikiran.
-                </p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <span class="pastelpink-text small"
-                    ><i class="fas fa-eye me-1"></i> 8.7k</span
-                  >
-                  <span class="text-secondary small">Alam</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Video 3 -->
-          <div class="col-lg-4 col-md-6">
-            <div class="card pastelblue-100 shadow h-100">
-              <div
-                class="position-relative pastelpink-200 d-flex align-items-center justify-content-center"
-                style="height: 12rem"
-              >
-                <i class="fas fa-play-circle fa-3x text-white opacity-75"></i>
-                <div
-                  class="position-absolute bottom-0 end-0 bg-dark bg-opacity-50 text-white small px-2 py-1 rounded m-2"
-                >
-                  10:05
-                </div>
-              </div>
-              <div class="card-body">
-                <h3 class="h6 fw-semibold mb-2">Langit Senja yang Damai</h3>
-                <p class="text-muted small mb-3">
-                  Visual langit senja dan musik lembut untuk relaksasi.
-                </p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <span class="pastelpink-text small"
-                    ><i class="fas fa-eye me-1"></i> 6.2k</span
-                  >
-                  <span class="text-secondary small">Musik</span>
-                </div>
-              </div>
-            </div>
-          </div>
+           <!-- Video 2 -->
+  <div class="col-lg-4 col-md-6">
+    <div class="card pastelpink-100 shadow h-100">
+      <div
+        class="position-relative pastelpink-400 d-flex align-items-center justify-content-center"
+        style="height: 12rem; overflow: hidden"
+      >
+        <img
+          src="rainforest.jpg"
+          alt="Hutan Hujan"
+          style="
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 1;
+          "
+        />
+        <i
+          class="fas fa-play-circle fa-3x text-white opacity-75"
+          style="z-index: 2; position: relative"
+        ></i>
+        <div
+          class="position-absolute bottom-0 end-0 bg-dark bg-opacity-50 text-white small px-2 py-1 rounded m-2"
+          style="z-index: 2"
+        >
+          15:21
         </div>
       </div>
+      <div class="card-body">
+        <h3 class="h6 fw-semibold mb-2">Hutan Hujan yang Damai</h3>
+        <p class="text-muted small mb-3">
+          Suara hujan dan alam yang menenangkan pikiran.
+        </p>
+        <div class="d-flex justify-content-between align-items-center">
+          <span class="pastelpink-text small"
+            ><i class="fas fa-eye me-1"></i> 8.7k</span
+          >
+          <span class="text-secondary small">Alam</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Video 3 -->
+  <div class="col-lg-4 col-md-6">
+    <div class="card pastelblue-100 shadow h-100">
+      <div
+        class="position-relative pastelpink-200 d-flex align-items-center justify-content-center"
+        style="height: 12rem; overflow: hidden"
+      >
+        <img
+          src="langitSenja.jpg"
+          alt="Langit Senja"
+          style="
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 1;
+          "
+        />
+        <i
+          class="fas fa-play-circle fa-3x text-white opacity-75"
+          style="z-index: 2; position: relative"
+        ></i>
+        <div
+          class="position-absolute bottom-0 end-0 bg-dark bg-opacity-50 text-white small px-2 py-1 rounded m-2"
+          style="z-index: 2"
+        >
+          10:05
+        </div>
+      </div>
+      <div class="card-body">
+        <h3 class="h6 fw-semibold mb-2">Langit Senja yang Damai</h3>
+        <p class="text-muted small mb-3">
+          Visual langit senja dan musik lembut untuk relaksasi.
+        </p>
+        <div class="d-flex justify-content-between align-items-center">
+          <span class="pastelpink-text small"
+            ><i class="fas fa-eye me-1"></i> 6.2k</span
+          >
+          <span class="text-secondary small">Musik</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
     </section>
 
     <footer class="py-4 bg-white border-top mt-5">

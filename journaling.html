@@ -66,47 +66,40 @@
       </div>
     </nav>
 
-    <!-- Mood Tracker Section -->
-    <section id="moodTracker" class="py-5 bg-white">
+    <!-- Journaling Section -->
+    <section class="py-5">
       <div class="container">
-        <h2 class="h2 fw-bold text-center pastelpink-text mb-5">
-          Mood Tracker
-        </h2>
+        <h2 class="h1 fw-bold text-center pastelpink-text mb-5">Journaling</h2>
         <div class="row justify-content-center">
-          <div class="col-lg-6">
+          <div class="col-lg-8">
             <div class="card shadow mb-4">
               <div class="card-body text-center">
-                <p class="mb-3">Bagaimana perasaanmu hari ini?</p>
-                <div class="d-flex justify-content-center gap-3 mb-3">
-                  <span class="mood-emoji fs-1" data-mood="senang" role="button"
-                    >😊</span
-                  >
-                  <span class="mood-emoji fs-1" data-mood="biasa" role="button"
-                    >😐</span
-                  >
-                  <span class="mood-emoji fs-1" data-mood="sedih" role="button"
-                    >😢</span
-                  >
-                  <span class="mood-emoji fs-1" data-mood="cemas" role="button"
-                    >😰</span
-                  >
-                </div>
+                <h3 class="fw-semibold mb-4">Bagaimana perasaanmu hari ini?</h3>
+                <textarea
+                  class="form-control mb-4"
+                  rows="4"
+                  placeholder="Tulis di sini..."
+                ></textarea>
                 <button
-                  id="saveMood"
-                  class="btn pastelpink-500 text-white"
-                  disabled
+                  class="btn pastelpink-500 text-white px-4 py-2 shadow-sm mb-3"
                 >
-                  Simpan Mood
+                  Simpan Jurnal
                 </button>
               </div>
             </div>
-            <div class="card shadow">
-              <div class="card-body">
-                <h5 class="fw-semibold mb-3">Riwayat Mood</h5>
-                <ul id="moodHistory" class="list-group list-group-flush small">
-                  <!-- Riwayat mood akan muncul di sini -->
-                </ul>
-              </div>
+            <div class="text-center mb-4">
+              <span class="fs-1 mx-2" role="img" aria-label="love">😍</span>
+              <span class="fs-1 mx-2" role="img" aria-label="laugh">😂</span>
+              <span class="fs-1 mx-2" role="img" aria-label="smile">😊</span>
+              <span class="fs-1 mx-2" role="img" aria-label="neutral">😐</span>
+              <span class="fs-1 mx-2" role="img" aria-label="confused">😵‍💫</span>
+              <span class="fs-1 mx-2" role="img" aria-label="angry">😡</span>
+              <span class="fs-1 mx-2" role="img" aria-label="cry">😭</span>
+            </div>
+            <div class="text-center">
+              <button class="btn pastelpink-500 text-white px-4 py-2 shadow-sm">
+                Simpan Mood Tracker
+              </button>
             </div>
           </div>
         </div>
