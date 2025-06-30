@@ -112,7 +112,7 @@ body {
   background: #ffa7a7;
   border-radius: 10px;
 }
-/* Animation for breathing exercise */
+
 @keyframes breathe {
   0%,
   100% {
@@ -125,7 +125,7 @@ body {
 .breathing-circle {
   animation: breathe 6s ease-in-out infinite;
 }
-/* Kombinasi warna biru pastel dan pink pastel pada section dan card */
+
 section.pastelpink-100:nth-of-type(even),
 section.bg-white:nth-of-type(odd) {
   background-color: #eaf7ff !important;
