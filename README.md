@@ -1,4 +1,4 @@
-# Ruang Lega
+# Proyek Akhir Dasar Desain Antarmuka Pengguna
 
 Ruang Lega adalah website yang menyediakan berbagai fitur untuk mendukung kesehatan mental, seperti mini games, film & musik relaksasi, ruang diskusi, serta journaling & mood tracker. Website ini dikembangkan oleh tim mahasiswa sebagai proyek akhir.
 
@@ -14,7 +14,7 @@ Ruang Lega adalah website yang menyediakan berbagai fitur untuk mendukung keseha
 
 1. Clone repository ini:
    ```
-   git clone https://github.com/username/repo-ruang-lega.git
+   https://github.com/lidiatrifosa/ProyekAkhir_DDAP.git
    ```
 2. Buka folder project di VS Code atau editor Anda.
 3. Buka file `index.html` di browser untuk mulai menggunakan aplikasi.
